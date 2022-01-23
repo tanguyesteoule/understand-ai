@@ -1,0 +1,26 @@
+<script>
+    $('#train-button').click(function() {
+        $('#img-model').attr('src', 'images/model_trained.png')
+    })
+</script>
+
+<h4 class='center'>Entrainement du modèle</h4>
+Ce "lien" est en fait une fonction mathématique très complexe qu'on appelle <span class="imp">modèle</span>.
+Il en existe de nombreux types (Réseau de neurones, arbres de décision, ...) mais pour simplifier ils peuvent être représentés par une liste de paramètres à déterminer.
+<br /><br />
+<span class="imp">Entraîner un modèle</span>, c'est régler ces paramètres. Pour cela on utilise des algorithmes spécialisés (backpropagation) à partir des données du passé.
+
+
+<p class="center"><img id="img-model" style="width:85%" src="images/model_training.png" /><br />
+<!-- Figure générée en js ? Pas sûr que l'échelle soit bonne
+    Ajouter des paramètre à l'intérieur du modèle (engrenages avec "?" ?)
+    Avec bouton simuler un temps d'attente (avec évolution en temps réel), quelques secondes
+    Backpropagation en hover, ou lien vers wikipedia ?
+    
+Nous avons deux types de données : Entrées (qui décrivent le bien) et la sortie désirée (le prix)
+On a un modèle mathématique (par exemple NN) avec pleins de paramètres à régler<br />
+
+-->
+<input id="train-button" type="button" value="Entrainer le modèle"></p><br />
+
+NB : Cet entrainement peut être très long (plusieurs heures / jours) si on utilise beaucoup de données mais il suffit de le faire une fois.

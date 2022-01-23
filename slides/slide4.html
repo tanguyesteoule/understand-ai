@@ -1,0 +1,25 @@
+<script>
+    $('#predict-button').click(function() {
+        $('#img-predict').attr('src', 'images/predict_ok.png');
+        $('#test-predict').show().animate({'opacity': 1}, 'slow', 'linear');
+    })
+</script>
+
+
+<h4 class='center'>Phase de prédiction</h4>
+Notre modèle est maintenant entrainé, les paramètres ne vont plus bouger et on a pas besoin de les connaître pour utiliser le modèle.<br />
+
+A présent, il suffit de lui donner de nouvelles données en entrée pour prédire "par intelligence artificielle".<br />
+
+<p class="center">
+    <img id="img-predict" style="width:85%" src="images/predict.png" /><br />
+
+    <input id="predict-button" type="button" value="Prédire les prix">
+</p>
+
+<!-- Trouver des exemples et en tirer 3 aléatoires pour parraitre moins statique ?-->
+<div id="test-predict" style="display: None; opacity:0;">
+    Bravo vous venez d'effectuer vos premières estimations de prix !
+    Vous pourrez ainsi faire des économies en vous passant de l'agent immobilier responsable de cette tâche !<br />
+    <div class="center"><span class="imp">... Mais est-ce réellement une bonne idée ?</span></div>
+</div>

@@ -1,0 +1,52 @@
+body {
+    background-color: #ddd;
+}
+
+.center {
+    text-align: center;
+}
+
+h3, h4, h5 {
+    color:#72afe7;
+}
+
+.imp {
+    font-weight: bold;
+    color:#72afe7;
+}
+
+.content {
+    font-size: 1.3em;
+    border: 1px black solid;
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.arrow {
+    color: #333;
+    font-size: 3.2em;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.arrow:hover {
+    color: #72afe7;
+    transition: color 0.25s;
+  }
+
+#left-arrow {
+    left: 50px;
+}
+
+#right-arrow {
+    right: 50px;
+}
